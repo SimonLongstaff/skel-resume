@@ -1,13 +1,13 @@
 <script lang="ts">
     import '../app.postcss';
     import {AppBar, AppShell, initializeStores, storeHighlightJs, storePopup} from '@skeletonlabs/skeleton';
-
     // Highlight JS
     import hljs from 'highlight.js';
     import 'highlight.js/styles/github-dark.css';
     // Floating UI for Popups
     import {arrow, autoUpdate, computePosition, flip, offset, shift} from '@floating-ui/dom';
     import Icon from "@iconify/svelte";
+
 
     storeHighlightJs.set(hljs);
 
