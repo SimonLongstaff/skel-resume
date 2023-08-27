@@ -1,6 +1,6 @@
 <script lang="ts">
     import '../app.postcss';
-    import {AppBar, AppShell, initializeStores, storeHighlightJs, storePopup} from '@skeletonlabs/skeleton';
+    import {AppBar, AppShell, storeHighlightJs, storePopup} from '@skeletonlabs/skeleton';
     // Highlight JS
     import hljs from 'highlight.js';
     import 'highlight.js/styles/github-dark.css';
@@ -12,7 +12,6 @@
     storeHighlightJs.set(hljs);
 
     storePopup.set({computePosition, autoUpdate, flip, shift, offset, arrow});
-    initializeStores();
 </script>
 
 <!-- App Shell -->
