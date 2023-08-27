@@ -1,9 +1,10 @@
 {
-  "name": "skel-resume",
+  "name": "Simon Longstaff - Software Engineer",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "vite dev",
+    "deploy": "vite build && vite gh-pages -d build -t true",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

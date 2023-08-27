@@ -16,7 +16,7 @@
         Full Stack Developer with {yearsExperience.toFixed(1)} years experience
     </h1>
     <h2 class="text-3xl font-bold gradient-subheading">
-        I build web applications using the latest technologies
+        Tokyo based software engineer
     </h2>
     <Technologies/>
 </div>
