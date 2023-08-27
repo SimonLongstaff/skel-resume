@@ -4,6 +4,7 @@
 
     export let images: string[] = [];
     let currentImageIndex = 0;
+    const modalStore = getModalStore();
 
     let interval: any;
 
@@ -23,7 +24,7 @@
             image: images[currentImageIndex],
             modalClasses: 'w-modal-wide',
         }
-        getModalStore().set([modal]);
+        modalStore.trigger(modal)
     };
 </script>
 

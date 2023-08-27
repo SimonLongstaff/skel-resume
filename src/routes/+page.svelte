@@ -4,10 +4,9 @@
     import Education from "../components/Education.svelte";
     import WorkHistory from "../components/WorkHistory.svelte";
     import ProjectList from "../components/ProjectList.svelte";
-    import {initializeStores, Modal} from "@skeletonlabs/skeleton";
+    import {Modal} from "@skeletonlabs/skeleton";
     import ExtraCircu from "../components/ExtraCircu.svelte";
 
-    initializeStores();
 
     const GetYear = () => {
         const date = new Date();

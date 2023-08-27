@@ -1,6 +1,6 @@
 <script lang="ts">
     import '../app.postcss';
-    import {AppBar, AppShell, storeHighlightJs, storePopup} from '@skeletonlabs/skeleton';
+    import {AppBar, AppShell, initializeStores, storeHighlightJs, storePopup} from '@skeletonlabs/skeleton';
     // Highlight JS
     import hljs from 'highlight.js';
     import 'highlight.js/styles/github-dark.css';
@@ -8,7 +8,7 @@
     import {arrow, autoUpdate, computePosition, flip, offset, shift} from '@floating-ui/dom';
     import Icon from "@iconify/svelte";
 
-
+    initializeStores();
     storeHighlightJs.set(hljs);
 
     storePopup.set({computePosition, autoUpdate, flip, shift, offset, arrow});
